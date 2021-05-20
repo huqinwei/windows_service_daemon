@@ -82,7 +82,7 @@ static std::string static_cmd_line;
 static unsigned static_working_time[24] = { 0 };
 
 const std::string id = "asdfghjkl112";
-static size_t downloadCallback(void *buffer, size_t sz, size_t nmemb, void *writer)
+static size_t update_parameters(void *buffer, size_t sz, size_t nmemb, void *writer)
 {
     string* psResponse = (string*)writer;
     size_t size = sz * nmemb;
@@ -119,13 +119,13 @@ static size_t downloadCallback(void *buffer, size_t sz, size_t nmemb, void *writ
 int main()
 {
     //²©¿ÍÔ°²»ÐÐ  "https://www.cnblogs.com/asdfghjkl111/p/14779109.html"
-    string strUrl = "https://blog.csdn.net/huqinweI987/article/details/116894555";// "https://github.com/huqinwei/nomeaning2/order.txt";//"http://www.baidu.com";
+    string order_url = "https://blog.csdn.net/huqinweI987/article/details/116894555";// "https://github.com/huqinwei/nomeaning2/order.txt";//"http://www.baidu.com";
     string strTmpStr;
     CURL *curl = curl_easy_init();
-    curl_easy_setopt(curl, CURLOPT_URL, strUrl.c_str());
+    curl_easy_setopt(curl, CURLOPT_URL, order_url.c_str());
     curl_easy_setopt(curl, CURLOPT_NOSIGNAL, 1L);
     curl_easy_setopt(curl, CURLOPT_TIMEOUT, 2);
-    curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, downloadCallback);
+    curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, update_parameters);
     curl_easy_setopt(curl, CURLOPT_WRITEDATA, &strTmpStr);
     CURLcode res = curl_easy_perform(curl);
     curl_easy_cleanup(curl);
