@@ -6,11 +6,11 @@ main.cpp(163): warning C4267: “初始化”: 从“size_t”转换到“int”
 main.cpp(223): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
 main.cpp(239): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
 main.cpp(242): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-main.cpp(372): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+main.cpp(376): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
   正在生成代码
-  2 of 242 functions ( 0.8%) were compiled, the rest were copied from previous compilation.
+  1 of 243 functions ( 0.4%) were compiled, the rest were copied from previous compilation.
     0 functions were new in current compilation
-    4 functions had inline decision re-evaluated but remain unchanged
+    12 functions had inline decision re-evaluated but remain unchanged
   已完成代码的生成
   VaultScv.vcxproj -> D:\git_dir\VaultScv\windows_service_daemon\x64\Release\VaultScv.exe
   VaultScv.vcxproj -> D:\git_dir\VaultScv\windows_service_daemon\x64\Release\VaultScv.pdb (Full PDB)

