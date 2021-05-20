@@ -2,6 +2,7 @@
 a windows service which managing other programs   一个守护进程，以windows服务形式存在
 
 
+基于windows开发，使用VS2015，其他版本可能需要做一下转换。
 
 主要功能：
 1.以服务形式存活，并且负责检测、拉起、传参目标程序.
