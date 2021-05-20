@@ -1,0 +1,10 @@
+﻿  main.cpp
+main.cpp(91): warning C4267: “参数”: 从“size_t”转换到“int”，可能丢失数据
+main.cpp(213): error C2664: “BOOL CreateDirectoryW(LPCWSTR,LPSECURITY_ATTRIBUTES)”: 无法将参数 1 从“const char *”转换为“LPCWSTR”
+  main.cpp(213): note: 与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+main.cpp(220): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+main.cpp(235): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+main.cpp(317): error C2664: “BOOL CreateDirectoryW(LPCWSTR,LPSECURITY_ATTRIBUTES)”: 无法将参数 1 从“const char [6]”转换为“LPCWSTR”
+  main.cpp(317): note: 与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换
+main.cpp(318): error C2664: “BOOL CreateDirectoryW(LPCWSTR,LPSECURITY_ATTRIBUTES)”: 无法将参数 1 从“const char [7]”转换为“LPCWSTR”
+  main.cpp(318): note: 与指向的类型无关；转换要求 reinterpret_cast、C 样式转换或函数样式转换

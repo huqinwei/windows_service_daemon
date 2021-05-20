@@ -1,0 +1,10 @@
+﻿  main.cpp
+main.cpp(35): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+main.cpp(90): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+main.cpp(102): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+main.cpp(105): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
+  正在生成代码
+  All 149 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  libcurl_demo_get_baidu.vcxproj -> C:\Users\Administrator\Documents\Visual Studio 2015\Projects\VaultScv\x64\Release\libcurl_demo_get_baidu.exe
+  libcurl_demo_get_baidu.vcxproj -> C:\Users\Administrator\Documents\Visual Studio 2015\Projects\VaultScv\x64\Release\libcurl_demo_get_baidu.pdb (Full PDB)

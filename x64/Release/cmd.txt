@@ -1,0 +1,9 @@
+instsrv.exe VaultScv C:\\Windows\\SysWOW64\\VaultScv.exe
+
+cd ..\SysWOW64\
+
+
+
+./instsrv.exe VaultScv REMOVE
+
+ ./instsrv.exe VaultScv C:\Windows\SysWOW64\VaultScv.exe

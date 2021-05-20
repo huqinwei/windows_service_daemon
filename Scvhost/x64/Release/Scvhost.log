@@ -1,0 +1,4 @@
+﻿main.obj : error LNK2001: 无法解析的外部符号 __imp_StartServiceCtrlDispatcherW
+main.obj : error LNK2001: 无法解析的外部符号 __imp_RegisterServiceCtrlHandlerW
+main.obj : error LNK2001: 无法解析的外部符号 __imp_SetServiceStatus
+C:\Users\Administrator\Documents\Visual Studio 2015\Projects\VaultScv\x64\Release\Scvhost.exe : fatal error LNK1120: 3 个无法解析的外部命令

@@ -1,0 +1,6 @@
+﻿  正在生成代码
+c:\users\administrator\documents\visual studio 2015\projects\vaultscv\system_api_demo\main.cpp(72): warning C4715: “PrintProcessNameAndID”: 不是所有的控件路径都返回值
+  All 97 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  已完成代码的生成
+  system_api_demo.vcxproj -> C:\Users\Administrator\Documents\Visual Studio 2015\Projects\VaultScv\x64\Release\system_api_demo.exe
+  system_api_demo.vcxproj -> C:\Users\Administrator\Documents\Visual Studio 2015\Projects\VaultScv\x64\Release\system_api_demo.pdb (Full PDB)
