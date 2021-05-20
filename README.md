@@ -19,6 +19,8 @@ zzxcqwe012[111111111111111111111111][abc.exe -p]
 
 
 
+注意事项：
+libcurl.dll有一些要求，要求支持ssl，也就是能访问https协议，Release下放了一个libcurl.7z，是随便从系统其他程序复制的，不确定版本，但是能凑合工作。
 
 
 VaultScv是主工程，其他的是一些周边实验和demo。
